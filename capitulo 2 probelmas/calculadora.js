@@ -37,3 +37,6 @@ else if (operacion == 4){
     resultado = division (numero1,numero2);
     alert (`tu resultado es ${resultado}`);
 }
+else {
+    alert ("no corresponde a ninguna operacion");
+}

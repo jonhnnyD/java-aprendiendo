@@ -65,24 +65,3 @@ else if(pedro >= 2.9 ){
     alert ('Pedro Te alcanza para el helado con confites o pote de 1/4');
     alert ('y te sobran '+ (pedro-2.9));
 }
-
-
-
-if(ramiro >= 0.6 && ramiro < 1 ){
-    alert ('Ramiro Te alcanza para el Helado de agua');
-}
-else if(ramiro >= 1 && ramiro < 1.6 ){
-    alert ('Ramiro Te alcanza para el Helado de crema');
-}
-else if(ramiro >= 1.6 && ramiro < 1.7){
-    alert ('Ramiro Te alcanza para el palito bombon helado de tercera');
-}
-else if(ramiro >= 1.7 && ramiro < 1.8 ){
-    alert ('Ramiro Te alcanza para el palito bombon helado de segunda');
-}
-else if(ramiro >= 1.8 && ramiro < 2.9){
-    alert ('Ramiro Te alcanza para el palito bombon helado de primera');
-}
-else if(ramiro >= 2.9 ){
-    alert ('Ramiro Te alcanza para el helado con confites o pote de 1/4');
-}

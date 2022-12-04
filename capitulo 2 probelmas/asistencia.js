@@ -36,6 +36,5 @@ for (alumno in cantidad){
     else{
         resultado += "<br><br>"
     }
-    
-    document.write (resultado)
+     document.write (resultado)
 }
