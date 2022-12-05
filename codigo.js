@@ -1,67 +1,18 @@
-cofla= prompt ('Cuanto dineros tiene cofla?: ');
-pedro= prompt ('Cuanto dineros tiene pedro?: ');
-ramiro= prompt ('Cuanto dineros tiene ramiro?: ');
-//helado De Agua= 0.6
-//helado De Crema= 1
-//bombon Helado1= 1.6
-//bombon Helado2= 1.7
-//bombon Helado3= 1.8
-//pote Helado Confites= 2.9
-//pote CuartoKilo=2.9
-cofla = parseInt (cofla);
-pedro = parseInt (pedro);
-ramiro = parseInt (ramiro);
+class animal{
+    constructor(especie,edad,color){
+        this.especie = especie;
+        this.edad = edad;
+        this.color = color;
+        this.info = `soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
+    }
+    verInfo(){
+        document.write (this.info + "<br>");
+    }}
 
-if(cofla >= 0.6 && cofla < 1){
-    alert ('Cofla Te alcanza para el Helado de agua');
-    alert ('y te sobran '+ (cofla-0.6));
-}
-else if(cofla >= 1 && cofla < 1.6 ){
-    alert ('Cofla Te alcanza para el Helado de crema');
-    alert ('y te sobran '+ (cofla-1));
-}
-else if(cofla >= 1.6 && cofla < 1.7){
-    alert ('Cofla Te alcanza para el palito bombon helado de tercera');
-    alert ('y te sobran '+ (cofla-1.6));
-}
-else if(cofla >= 1.7 && cofla < 1.8){
-    alert ('Cofla Te alcanza para el palito bombon helado de segunda');
-    alert ('y te sobran '+ (cofla-1.7));
-}
-else if(cofla >= 1.8 && cofla < 2.8){
-    alert ('Cofla Te alcanza para el palito bombon helado de primera');
-    alert ('y te sobran '+ (cofla-1.8));
-}
-else if(cofla >= 2.9 ){
-    alert ('Cofla Te alcanza para el helado con confites o pote de 1/4');
-    alert ('y te sobran '+ 
-    (cofla-2.9));
-}
+let perro = new animal ("perro",5,"marron");
+let gato = new animal("gato",2,"negro");
+let pajaro = new animal ("pajaro", 2, "vrde");
 
-
-
-
-if(pedro >= 0.6 && pedro < 1 ){
-    alert ('Pedro Te alcanza para el Helado de agua');
-    alert ('y te sobran '+ pedro-(0.6));
-}
-else if(pedro >= 1 && pedro < 1.6 ){
-    alert ('Pedro Te alcanza para el Helado de crema');
-    alert ('y te sobran '+ (pedro-1));
-}
-else if(pedro >= 1.6 && pedro < 1.7 ){
-    alert ('Pedro Te alcanza para el palito bombon helado de tercera');
-    alert ('y te sobran '+ (pedro-1.6));
-}
-else if(pedro >= 1.7 && pedro < 1.8){
-    alert ('Pedro Te alcanza para el palito bombon helado de segunda');
-    alert ('y te sobran '+ (pedro-1.7));
-}
-else if(pedro >= 1.8 && pedro < 2.9){
-    alert ('Pedro Te alcanza para el palito bombon helado de primera');
-    alert ('y te sobran '+ (pedro-1.8));
-}
-else if(pedro >= 2.9 ){
-    alert ('Pedro Te alcanza para el helado con confites o pote de 1/4');
-    alert ('y te sobran '+ (pedro-2.9));
-}
+perro.verInfo();
+gato.verInfo();
+pajaro.verInfo();
